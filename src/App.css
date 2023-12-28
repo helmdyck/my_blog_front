@@ -1,0 +1,56 @@
+/*Navigation*/
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-logo {
+  height: 48px;
+  margin: 32px 0 0 32px;
+}
+
+.menu-plus {
+  height: 40px;
+  margin: 32px 32px 0 0;
+}
+
+
+input[type="checkbox"] {
+  opacity: 0;
+  display: none;
+  appearance: none;
+  position: absolute;
+}
+
+.bar{
+    position: relative;
+    cursor: pointer;
+    margin: 32px 50px 0 0;
+    display: flex;
+    justify-content: center;
+}
+
+.bar .vertical{
+    height: 40px;
+    width: 2px;
+    background-color: white;
+    position: absolute;
+    transition: 0.4s ease;
+}
+
+.bar .horizontal{
+    height: 2px;
+    width: 40px;
+    background-color: white;
+    position: absolute;
+    transition: 0.4s ease;
+    top: 20px;
+}
+
+input[type="checkbox"]:checked + .bar .vertical {
+  transform: rotate(-45deg);
+}
+
+input[type="checkbox"]:checked + .bar .horizontal {
+    transform: rotate(-45deg);
+  }
