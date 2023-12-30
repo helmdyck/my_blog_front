@@ -1,0 +1,45 @@
+.hero-container {
+  background-image: url("../assets/gradientbg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-size: contain;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 85vh;
+  
+}
+
+.hero-title {
+  color: white;
+  text-align: center;
+  font-weight: 400;
+  font-size: 2rem;
+  transition: 0.5s ease-in;
+}
+
+.categories-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-bottom: 60px;
+}
+
+.category-box {
+  width: auto;
+}
+
+.category-box button {
+  border: solid 1px white;
+  background: none;
+  color: white;
+  font-size: 1.8rem;
+  padding: 10px 25px;
+  transition: 0.2s ease-in-out;
+}
+
+.category-box button:hover {
+  color: black;
+  background-color: white;
+}
