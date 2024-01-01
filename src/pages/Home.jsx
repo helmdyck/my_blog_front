@@ -1,7 +1,27 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./Home.css";
+import axios from "axios";
 
 function Home() {
+  const [articles, setArticles] = useState([]);
+  // console.log(articles);
+
+  useEffect(() => {
+    const getArticles = async () => {
+      try {
+        const response = await axios({
+          method: "get",
+          url: `${import.meta.env.VITE_PORT_URL}/`,
+        });
+        console.log(response.data);
+        setArticles(response.data.articles);
+      } catch (error) {
+        console.log(error);
+      }
+    };
+    getArticles();
+  }, []);
+
   return (
     <>
       <div className="container-fluid hero-container">
@@ -24,13 +44,13 @@ function Home() {
           <div className="category-box">
             <button className="btn rounded-pill">HIGIENE ÍNTIMA</button>
           </div>
-
-          {/* <div className="row tex-center">
-            <div className="btn category-box">ALL</div>
-            <div className="btn category-box">JUGUETES</div>
-            <div className="btn category-box">SALUD SEXUAL</div>
-            <div className="btn category-box">HIGIENE ÍNTIMA</div>
-          </div> */}
+        </div>
+      </div>
+      <div className="section">
+        <div className="container">
+          <div className="row">
+            <div className="col"></div>
+          </div>
         </div>
       </div>
     </>

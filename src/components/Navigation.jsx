@@ -3,7 +3,7 @@ import mybloglogo from "../assets/mybloglogo.png";
 import "../App.css";
 
 function Navigation() {
-  const [showMenu, setShowMenu] = useState(false);
+  const [showMenu, setShowMenu] = useState();
   console.log(showMenu);
 
   return (

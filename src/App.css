@@ -1,11 +1,7 @@
 /*Navigation*/
-.nav-container{
-  position: fixed;
-}
-
 .nav-inner {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   position: relative;
 }
 
