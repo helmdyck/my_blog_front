@@ -48,8 +48,15 @@ function Home() {
       </div>
       <div className="section">
         <div className="container">
-          <div className="row">
-            <div className="col"></div>
+          <div className="art-row">
+            {articles.map((article) => (
+              
+                <div className="art-card">
+                  <img src={article.image} alt="" className="art-img" />
+                  <h2>{article.title}</h2>
+                </div>
+              
+            ))}
           </div>
         </div>
       </div>
