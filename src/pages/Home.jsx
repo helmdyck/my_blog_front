@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./Home.css";
 import axios from "axios";
+import Categories from "../components/categories";
 
 function Home() {
   const [articles, setArticles] = useState([]);
@@ -30,32 +31,18 @@ function Home() {
           ayudaremos a descubrirla.
         </h1>
       </div>
+      <Categories/>
       <div className="section">
-        <div className="container categories-container">
-          <div className="category-box">
-            <button className="btn rounded-pill">TODO</button>
-          </div>
-          <div className="category-box">
-            <button className="btn rounded-pill">JUGUETES</button>
-          </div>
-          <div className="category-box">
-            <button className="btn rounded-pill">SALUD SEXUAL</button>
-          </div>
-          <div className="category-box">
-            <button className="btn rounded-pill">HIGIENE ÍNTIMA</button>
-          </div>
-        </div>
-      </div>
-      <div className="section">
-        <div className="container">
+        <div className="container-fluid">
           <div className="art-row">
             {articles.map((article) => (
-              
-                <div className="art-card">
-                  <img src={article.image} alt="" className="art-img" />
-                  <h2>{article.title}</h2>
+              <div className="art-card" key={article.id}>
+                <img src={article.image} alt="" className="art-img" />
+                <div className="category-box">
+                  <p className="rounded-pill">{article.category.name}</p>
                 </div>
-              
+                <h2>{article.title}</h2>
+              </div>
             ))}
           </div>
         </div>

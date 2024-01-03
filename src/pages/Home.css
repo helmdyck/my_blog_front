@@ -7,7 +7,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 85vh;
+  height: 80vh;
   
 }
 
@@ -26,20 +26,21 @@
   margin-bottom: 60px;
 }
 
-.category-box {
+.category-selector {
   width: auto;
 }
 
-.category-box button {
+.category-selector button {
   border: solid 1px white;
   background: none;
   color: white;
   font-size: 1.8rem;
+  text-transform: uppercase;
   padding: 10px 25px;
   transition: 0.2s ease-in-out;
 }
 
-.category-box button:hover {
+.category-selector button:hover {
   color: black;
   background-color: white;
 }
@@ -50,21 +51,47 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
+  
 }
 
 .art-card{
   width: 50%;
-  padding: 30px 10px 30px 10px;
+  padding: 30px 60px 30px 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 600px;
 }
 
 .art-card img{
   width: 100%;
   height: 60%;
   object-fit: cover;
+  cursor: pointer;
 }
 
 .art-card h2 {
   font-size: 40px;
+  font-weight:400 ;
   color: white;
   text-align: center;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.art-card h2:hover{
+ color: rgb(218, 6, 186);
+ text-decoration: underline 2px;
+ 
+}
+
+.category-box p {
+  border: solid 1px white;
+  background: none;
+  color: white;
+  font-size: 1rem;
+  text-transform: uppercase;
+  margin: 2rem;
+  padding: 10px 25px;
+  transition: 0.2s ease-in-out;
 }
