@@ -14,7 +14,7 @@ function Home() {
           method: "get",
           url: `${import.meta.env.VITE_PORT_URL}/`,
         });
-        console.log(response.data);
+        // console.log(response.data);
         setArticles(response.data.articles);
       } catch (error) {
         console.log(error);
