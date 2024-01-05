@@ -23,7 +23,7 @@ function Categories() {
 
   return (
     <div className="section">
-        <div className="container-fluid categories-container">
+        <div className="container categories-container">
           <div className="category-selector">
             <button className="btn rounded-pill">TODO</button>
           </div>

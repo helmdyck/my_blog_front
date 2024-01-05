@@ -3,7 +3,7 @@ import "../App.css";
 
 function Menu({ showMenu }) {
   return (
-    <div>
+    <>
       {showMenu && (
         <div
           className="menu-container"
@@ -18,7 +18,7 @@ function Menu({ showMenu }) {
           
         </div>
       )}
-    </div>
+    </>
   );
 }
 
