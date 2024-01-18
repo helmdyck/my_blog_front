@@ -81,7 +81,8 @@
 
 .art-card h2:hover{
  color: rgb(185, 3, 158);
- text-decoration: underline 2px;
+ text-decoration-thickness: 2px;
+ /* text-decoration-color: rgb(185, 3, 158); */
  
 }
 
