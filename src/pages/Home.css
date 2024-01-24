@@ -13,11 +13,16 @@
 
 .hero-title {
   color: white;
-  text-align: center;
-  font-weight: 400;
-  font-size: 2rem;
+  text-transform: uppercase;
+  text-align:center;
+  font-weight: 900;
+  font-size: 120px;
+  line-height: 120px;
+  
   transition: 0.5s ease-in;
 }
+
+
 
 .categories-container {
   display: flex;
@@ -81,9 +86,10 @@
 
 .art-card h2:hover{
  color: rgb(185, 3, 158);
+ text-decoration: underline;
  text-decoration-thickness: 2px;
- /* text-decoration-color: rgb(185, 3, 158); */
- 
+ text-decoration-color: rgb(185, 3, 158);
+ text-underline-offset: 0.2rem;
 }
 
 .category-box p {
